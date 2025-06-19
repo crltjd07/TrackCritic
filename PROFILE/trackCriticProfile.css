@@ -1,0 +1,182 @@
+/* BACKGROUND IMAGE OVERLAY - CREATES FIXED BACKGROUND WITH OPACITY */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-image: url('mickHauptOnUnsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.3;
+}
+
+/* MAIN BODY STYLING WITH MARGIN */
+body {
+    margin: 30px;
+}
+
+/* FLEXBOX LAYOUT FOR ALL DIV ELEMENTS */
+body div {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+/* LINK COLOR STYLING */
+a {
+    color: #FF5349
+}
+
+/* MAIN DASHBOARD CONTAINER WITH BORDER AND POSITIONING */
+#dashboardContainer {
+    margin-top: 150px;
+    border-radius: 20px;
+    border: white 1px solid;
+    padding: 0 30px;
+}
+
+/* MAIN PROFILE CONTAINER - HORIZONTAL FLEXBOX LAYOUT */
+#profileContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: first baseline;
+    margin: 30px;
+    gap: 30px;
+}
+
+/* SECTION STYLING WITHIN PROFILE CONTAINER */
+#profileContainer section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* LEFT SIDE OF PROFILE - 60% WIDTH */
+#profileContainerLeft {
+    width: 60%;
+}
+
+/* FLEXBOX COLUMN LAYOUT FOR PROFILE SECTIONS */
+#profileHeader,
+#profileFeatures,
+#profilePersonal {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* CARD STYLING WITH SHADOW AND ROUNDED CORNERS */
+#profileHeader1,
+#profileHeader2,
+#profileFeatures1,
+#profileFeatures2 {
+    border-radius: 20px;
+    box-shadow: 0 0px 50px #000000;
+    padding: 30px;
+}
+
+/* PROFILE HEADER SECTION WIDTH */
+#profileHeader {
+    width: 60%;
+}
+
+/* PROFILE HEADER CARDS WITH DIFFERENT BACKGROUND COLORS */
+#profileHeader1 {
+    background-color: #8f0a3f80;
+}
+
+#profileHeader2 {
+    background-color: #93770680;
+}
+
+/* PROFILE FEATURES SECTION WIDTH */
+#profileFeatures {
+    width: 40%;
+}
+
+/* PROFILE FEATURES CARDS WITH DIFFERENT BACKGROUND COLORS */
+#profileFeatures1 {
+    background-color: #99570066;
+}
+
+#profileFeatures2 {
+    background-color: #00994f80;
+}
+
+/* RIGHT SIDE OF PROFILE - 40% WIDTH WITH HORIZONTAL LAYOUT */
+#profileContainerRight {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+}
+
+/* PERSONAL INFORMATION SECTION STYLING */
+#profilePersonal {
+    width: 100%;
+    border-radius: 20px;
+    background-color: #00429980;
+    box-shadow: 0 0px 50px #000000;
+    padding: 30px;
+}
+
+/* TABLE STYLING FOR USER INFORMATION */
+table th,
+table td {
+    border: 1px solid #ffffff;
+    padding: 8px 12px;
+    text-align: left;
+    background: hsla(0, 0%, 0%, 0.35);
+}
+
+/* LOGOUT SECTION WITH FLEXBOX ALIGNMENT */
+#logOut {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* LOGOUT FORM POSITIONING */
+#logOut form {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+/* DROPDOWN OPTION STYLING */
+option {
+    background-color: #000000e5;
+    color: white;
+}
+
+/* MUSIC REVIEW CREATION SECTION */
+#createMusicReview {
+    margin: 30px auto;
+    width: 50%;
+    border: 1px solid #ffffff;
+    padding: 50px;
+}
+
+/* CREDITS SECTION POSITIONING */
+.credits {
+    bottom: 10px;
+}
+
+/* PROFILE FOOTER STYLING */
+#profileFooter {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* SUBMIT BUTTON STYLING */
+.submit {
+    font-size: 15pt;
+    width: 80%;
+    padding: 50px;
+    height: auto;
+}
+
+#nav {
+    display: none;
+}

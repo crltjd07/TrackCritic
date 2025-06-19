@@ -1,0 +1,99 @@
+/* BACKGROUND IMAGE OVERLAY FOR THE ENTIRE PAGE */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-image: url('../PROFILE/mickHauptOnUnsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* MAKES THE BACKGROUND IMAGE SEMI-TRANSPARENT */
+    opacity: 0.3;
+}
+
+/* MAIN TITLE STYLING WITH LEFT MARGIN AND LARGE FONT */
+#title {
+    margin-left: 30px;
+    margin-bottom: -60px;
+    font-size: 30pt;
+}
+
+/* TOP DESCRIPTION SECTION STYLING */
+.pollDescriptionTop {
+    margin-left: 30px;
+    margin-bottom: -20px;
+    width: 80%;
+}
+
+/* BOTTOM DISCLAIMER SECTION STYLING - CENTERED */
+.pollDescriptionBottom {
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    width: 100%;
+}
+
+/* MAIN CONTAINER FOR ALL POLL FORMS - FLEXBOX LAYOUT */
+#pollContainer {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    margin-top: 150px;
+    gap: 50px;
+    margin-bottom: 45px;
+}
+
+/* INDIVIDUAL POLL FORM STYLING WITH GLASSMORPHISM EFFECT */
+form {
+    border-radius: 20px;
+    padding: 50px;
+    /* SEMI-TRANSPARENT DARK BACKGROUND */
+    background-color: hsla(0, 0%, 20%, 0.5);
+    /* WHITE SHADOW FOR GLASSMORPHISM EFFECT */
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.25);
+    /* SMOOTH TRANSITIONS FOR HOVER EFFECTS */
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+/* HOVER EFFECT FOR POLL FORMS - LIFTS UP WITH ENHANCED SHADOW */
+form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 50px rgba(255, 255, 255, 0.5);
+}
+
+/* SPACING FOR INPUT ELEMENTS WITHIN FORMS */
+form div input {
+    margin-right: 20px;
+}
+
+/* FLEXBOX LAYOUT FOR POLL CONTENT ELEMENTS */
+.pollContent div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* RATING SLIDER WIDTH */
+input[type="range"] {
+    width: 50%;
+}
+
+/* FOOTER SECTION OF EACH POLL WITH STATISTICS */
+.pollFooter {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+/* SUBMIT BUTTON STYLING - CENTERED AND RESPONSIVE WIDTH */
+form button {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
