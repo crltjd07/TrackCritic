@@ -1,0 +1,70 @@
+/* BACKGROUND IMAGE OVERLAY FOR THE ENTIRE PAGE */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-image: url('../PROFILE/mickHauptOnUnsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.3;
+}
+
+/* LINK COLOR STYLING */
+a {
+    color: #FF5349;
+}
+
+/* MAIN CONTAINER FOR THE MASONRY GRID LAYOUT */
+.grid-container {
+    width: 90%;
+    margin: 150px auto 0;
+    column-count: 3;
+    column-gap: 20px;
+}
+
+/* INDIVIDUAL CARD STYLING FOR ALBUM REVIEWS */
+.card {
+    margin: 0 0 20px;
+    border-radius: 20px;
+    background: black;
+    break-inside: avoid;
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+/* CARD HOVER EFFECTS FOR INTERACTIVITY */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(255, 255, 255, 0.5);
+}
+
+/* ALBUM COVER IMAGE STYLING */
+.card img {
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+
+/* CARD TEXT CONTENT CONTAINER */
+.card-content {
+    padding: 0.8rem 1rem;
+}
+
+/* ALBUM TITLE STYLING */
+.card-content h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* REVIEW TEXT AND RATING STYLING */
+.card-content p {
+    font-size: 0.95rem;
+}
+
+/* RATING PARAGRAPH SPACING */
+.card-content p:last-child {
+    margin: 0.5rem 0 0;
+}

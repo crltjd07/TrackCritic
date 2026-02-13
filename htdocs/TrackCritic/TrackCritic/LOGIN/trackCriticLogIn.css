@@ -1,0 +1,103 @@
+/* BACKGROUND IMAGE OVERLAY SETUP */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    /* BACKGROUND IMAGE PATH TO UNSPLASH PHOTO */
+    background-image: url('../LOGIN/romanMelnychukonUnsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* SEMI-TRANSPARENT OVERLAY EFFECT */
+    opacity: 0.7;
+}
+
+/* MAIN LOGIN FORM STYLING */
+form {
+    width: 450px;
+    height: 300px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    /* FORM PADDING FOR SPACING */
+    padding: 60px 70px;
+    /* SEMI-TRANSPARENT BLACK BACKGROUND */
+    background: #00000080;
+    /* GLOWING SHADOW EFFECT */
+    box-shadow: 5px 5px 50px #ffffff4d;
+    /* ROUNDED CORNERS */
+    border-radius: 20px;
+}
+
+/* RESET MARGINS FOR HEADERS */
+h1, h4 {
+    margin: 0;
+}
+
+/* BRAND COLOR FOR LINKS */
+a {
+    color: #FF5349;
+}
+
+/* CENTER LOGIN CONTAINER ON PAGE */
+#login {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* CENTER TRANSFORM TECHNIQUE */
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* SLIGHT VERTICAL OFFSET */
+    margin-top: 60px;
+}
+
+/* INPUT FIELD WIDTH CONTROL */
+.username, .password {
+    width: 70%;
+}
+
+/* SUBMIT BUTTON ALIGNMENT */
+.submit {
+    margin-left: 0;
+    margin-right: auto;
+    display: block;
+}
+
+/* RIGHT-ALIGN FORM SPANS (LINKS) */
+span {
+    margin-left: auto;
+    margin-right: 0;
+    display: block;
+}
+
+/* LOGO POSITIONING AND ANIMATION */
+#bigLogoPreview {
+    /* POSITION LOGO ABOVE FORM */
+    margin-top: -150px;
+    height: 400px;
+    background-image: url('bigLogo.png');
+    background-size: cover;
+    background-position: center;
+    /* APPLY BOUNCING ANIMATION */
+    animation: logo-bounce 5s infinite alternate;
+}
+
+/* LOGO BOUNCE ANIMATION KEYFRAMES */
+@keyframes logo-bounce {
+    /* START AT NORMAL SIZE */
+    0% {
+        transform: scale(1);
+    }
+    /* SCALE UP TO 110% AT MIDPOINT */
+    50% {
+        transform: scale(1.1);
+    }
+    /* RETURN TO NORMAL SIZE */
+    100% {
+        transform: scale(1);
+    }
+}

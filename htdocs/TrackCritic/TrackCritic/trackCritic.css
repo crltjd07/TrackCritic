@@ -1,0 +1,353 @@
+/* GENERAL STYLES FOR HTML AND BODY ELEMENTS */
+html, body {
+    min-width: 1400px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: black;
+    color: #FFFFFF;
+    margin: 20px;
+    user-select: none;
+}
+
+/* HIDES THE SCROLLBAR FOR THE BODY ELEMENT */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* CENTERS IFRAME ELEMENTS */
+iframe {
+    margin: 0 auto;
+}
+
+/* REMOVES UNDERLINE FROM ALL ANCHOR ELEMENTS */
+a {
+    text-decoration: none;
+}
+
+/* APPLIES A BORDER-RADIUS TO ALL DIV ELEMENTS */
+div {
+    border-radius: 20px;
+}
+
+/* STYLES FOR THE FIXED HEADER SECTION */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    background-color: #000000cc;
+    border-bottom: #ffffff 3px solid;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    padding: 15px 30px;
+    margin: 20px 20px 0 20px; 
+    z-index: 1;
+}
+
+/* STYLES FOR THE LEFT SECTION OF THE HEADER */
+#headerLeft {   
+    display: flex;
+    align-items: center;
+}
+
+/* STYLES FOR THE TRACKCRITIC LOGO IN THE HEADER */
+#trackCriticLogo {
+    height: 75px;
+    margin-right: 3px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* HOVER EFFECT FOR THE TRACKCRITIC LOGO */
+#trackCriticLogo:hover {
+    transform: scale(1.1);
+}
+
+/* STYLES FOR THE MAIN TITLE IN THE HEADER LEFT SECTION */
+#headerLeft h1 {
+    font-size: 26px;
+    color: #1DB954;
+    white-space: nowrap;
+}
+
+/* HOVER EFFECTS FOR VARIOUS TEXT ELEMENTS TO CHANGE COLOR AND CURSOR */
+#headerLeft h1:hover, 
+h1:hover, 
+li b:hover, 
+label b:hover, 
+small b:hover,
+h2:hover {
+    color: #28fe73; 
+    cursor: pointer;
+    transition: color 1s ease;
+}
+
+/* STYLES FOR THE SUBTITLE IN THE HEADER LEFT SECTION */
+#headerLeft p {
+    font-size: 13px;
+    color: #ffffffa8;
+    white-space: nowrap;
+    margin-left: 5px;
+    margin-top: 23px;
+}
+
+/* STYLES FOR THE RIGHT SECTION OF THE HEADER */
+#headerRight {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* STYLES FOR THE NAVIGATION LINKS WITHIN THE HEADER */
+#navigationInHeader {
+    display: flex;
+    margin-right: 10px;
+    gap: 5px;
+}
+
+/* STYLES FOR INDIVIDUAL NAVIGATION LINKS IN THE HEADER */
+#navigationInHeader a{
+    font-size: 14px;
+    color: #1DB954;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+
+/* HOVER EFFECT FOR NAVIGATION LINKS IN THE HEADER */
+#navigationInHeader a:hover{
+    background-color: #FFFFFF;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* STYLES FOR THE SEARCH BAR */
+#searchBar {
+    width: 350px;
+}
+
+/* STYLES FOR THE USER PROFILE IMAGE */
+#userProfile {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+/* GENERAL STYLES FOR INPUT, SELECT, AND TEXTAREA ELEMENTS */
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+    font-size: 14px;
+    background-color: #3333339b;
+    color: white;
+    font-size: 14px;
+    font-family: 'Nunito', sans-serif; 
+}
+
+/* HOVER EFFECT FOR INPUT, SELECT, AND TEXTAREA ELEMENTS */
+input:hover, select:hover, textarea:hover {
+    background: rgba(255, 255, 255, 0.0);
+}
+
+/* GENERAL STYLES FOR BUTTONS */
+button {
+    height: 40px;
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #555555;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* SPECIFIC MARGIN STYLES FOR THE PLAY/PAUSE BUTTON */
+#playPauseButton {
+    margin-bottom: 0;
+    margin-top: auto;
+}
+
+/* HOVER EFFECT FOR BUTTONS */
+button:hover {
+    background-color: #777777;
+    transform: scale(1.1);
+}
+
+/* CENTERS TEXT FOR ALL ANCHOR ELEMENTS */
+a {
+    text-align: center;
+}
+
+/* STYLES FOR SUBMIT BUTTONS */
+.submit {
+    margin: 0 auto;
+    width: 30%;
+    padding: 10px;
+    background: #1DB954;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* HOVER EFFECT FOR SUBMIT BUTTONS */
+.submit:hover {
+    background: #333333;
+}
+
+/* STYLES FOR THE FIXED NAVIGATION BAR AT THE BOTTOM */
+#nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    background: black;
+    box-shadow: 0 5px 50px hsla(151, 100%, 30%, 0.75);
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    padding: 10px 30px;
+    margin: 0 20px 20px 20px; 
+    z-index: 1;
+}
+
+/* STYLES FOR THE CONTENT WITHIN THE NAVIGATION BAR */
+#navContent {
+    display: flex;
+    flex-direction: row;
+    max-width: max-content;
+}
+
+/* STYLES FOR ANCHOR ELEMENTS WITHIN THE NAVIGATION CONTENT */
+#navContent a {
+    margin-right: 20px;
+    color: #1DB954;
+}
+
+/* STYLES FOR THE LOGO IN THE NAVIGATION BAR */
+#logoNav {
+    margin-left: auto;
+    height: 50px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+/* HOVER EFFECT FOR THE NAVIGATION LOGO */
+#logoNav:hover {
+    transform: scale(1.1);
+}
+
+/* ADJUSTED FONT SIZE AND MARGINS FOR NAVIGATION CONTENT */
+#navContent {
+    font-size: 13px;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+/* STYLES FOR THE FOOTER SECTION */
+#footer {
+    display: flex;
+    margin-top: 15px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 16px 40px;
+    background: #181818;
+    color: #ffffff;
+    font-size: 12px;
+    align-items: center;
+}
+
+/* STYLES FOR ANCHOR ELEMENTS WITHIN THE FOOTER */
+#footer a {
+    color: #1DB954;
+    text-decoration: none;
+}
+
+/* STYLES FOR THE LEFT SECTION OF THE FOOTER */
+.footerLeft {
+    width: 30%;
+    
+}
+
+/* FLEXBOX STYLES FOR DIVS IN LEFT AND RIGHT FOOTER SECTIONS */
+.footerLeft div, .footerRight div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* HOVER EFFECT FOR ANCHOR ELEMENTS IN THE FOOTER */
+#footer a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+/* STYLES FOR H1 IN THE LEFT FOOTER SECTION */
+.footerLeft h1 {
+    padding: 10px 0;
+    text-align: left;
+}
+
+/* STYLES FOR THE CENTER SECTION OF THE FOOTER */
+.footerCenter {
+    width: 50%;
+}
+
+/* FLEXBOX STYLES FOR FORMS IN THE CENTER FOOTER SECTION */
+.footerCenter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+/* STYLES FOR INPUTS IN THE CENTER FOOTER SECTION */
+.footerCenter input {
+    width: 30%;
+}
+
+/* STYLES FOR BUTTONS IN THE CENTER FOOTER SECTION */
+.footerCenter button {
+    width: 20%;
+}
+
+/* STYLES FOR THE RIGHT SECTION OF THE FOOTER */
+.footerRight {
+    width: 20%;
+}
+
+/* STYLES TO CENTER TITLE ELEMENTS HORIZONTALLY */
+.centerTitle {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* STYLES FOR THE FIXED CREDITS SECTION AT THE BOTTOM RIGHT */
+.credits {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: #00000040;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 13px;
+    box-shadow: 0 2px 8px #0003;
+}

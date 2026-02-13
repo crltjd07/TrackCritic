@@ -1,0 +1,163 @@
+/* BACKGROUND IMAGE SETUP FOR ENTIRE PAGE */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-image: url('../PROFILE/mickHauptOnUnsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.3;
+}
+
+/* GLOBAL LINK COLOR STYLING */
+a {
+    color: #FF5349
+}
+
+/* NEWSLETTER SIGNUP SECTION CONTAINER */
+#newsletterSignUp {
+    max-width: 700px;
+    margin: auto;
+}
+
+/* NEWSLETTER SIGNUP FORM STYLING WITH HOVER EFFECTS */
+#newsletterSignUp form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 50px;
+    background-color: hsla(0, 0%, 20%, 0.7);
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+/* HOVER EFFECT FOR NEWSLETTER SIGNUP FORM */
+#newsletterSignUp form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 50px rgba(255, 255, 255, 0.5);
+}
+
+#newsletterSignUp input {
+    width: 60%;
+}
+
+#newsletterSignUp button {
+    width: 30%;
+}
+
+/* MAIN NEWSLETTER CONTENT CONTAINER */
+#newsletterContent {
+    max-width: 950px;
+    max-height: max-content;
+    margin: 170px auto 30px auto;
+    padding: 50px;
+    border-radius: 20px;
+    background: hsla(0, 0%, 0%, 0.4);
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+/* HOVER EFFECT FOR MAIN NEWSLETTER CONTENT */
+#newsletterContent:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(255, 255, 255, 0.5);
+}
+
+/* THREE-COLUMN LAYOUT FOR NEWSLETTER SECTIONS */
+.columnNewsletter {
+    column-count: 3;
+    column-gap: 20px;
+}
+
+/* IMAGE STYLING WITHIN NEWSLETTER SECTIONS */
+.newsletter-section img {
+    display: block;
+    max-width: 80%;
+    margin: 18px auto;
+    border-radius: 14px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+/* HOVER EFFECT FOR NEWSLETTER IMAGES */
+.newsletter-section img:hover {
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+}
+
+/* NEWSLETTER HEADER SECTION STYLING */
+.newsletter-header {
+    border-bottom: 1px solid #1DB954;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+/* MAIN NEWSLETTER TITLE STYLING */
+.newsletter-header h2 {
+    margin: 0;
+    font-size: 2.2rem;
+    color: #1DB954;
+    letter-spacing: 1px;
+}
+
+/* DATE DISPLAY STYLING */
+.newsletter-date {
+    font-size: 1rem;
+    color: #ccc;
+    margin-top: 6px;
+}
+
+/* INDIVIDUAL NEWSLETTER SECTION STYLING */
+.newsletter-section {
+    margin-bottom: 28px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #222;
+}
+
+/* SECTION HEADING STYLING */
+.newsletter-section h3 {
+    margin: 0 0 8px 0;
+    color: #1DB954;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+}
+
+/* UNORDERED LIST STYLING IN SECTIONS */
+.newsletter-section ul {
+    margin: 0 0 0 18px;
+    padding: 0;
+    list-style: disc inside;
+}
+
+/* LIST ITEM STYLING */
+.newsletter-section li {
+    margin-bottom: 6px;
+    font-size: 1rem;
+}
+
+/* LINK STYLING WITHIN NEWSLETTER SECTIONS */
+.newsletter-section a {
+    color: #1DB954;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+/* HOVER EFFECT FOR SECTION LINKS */
+.newsletter-section a:hover {
+    color: #fff;
+}
+
+/* NEWSLETTER FOOTER SECTION STYLING */
+.newsletter-footer {
+    border-top: 1px solid #1DB954;
+    margin-top: 32px;
+    padding-top: 16px;
+    text-align: center;
+    color: #aaa;
+    font-size: 0.95rem;
+}

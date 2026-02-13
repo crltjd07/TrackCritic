@@ -1,0 +1,129 @@
+/* MAIN SIGNUP CONTAINER - HORIZONTAL LAYOUT */
+#signUp {
+    display: flex;
+    margin: 0 50px;
+    margin-top: 150px;
+    
+}
+
+/* FORM SPACING */
+form {
+    margin-right: 30px;
+}
+
+/* HEADER STYLING RESET */
+h1, h2{
+    margin: 0;
+}
+
+/* LINK COLOR STYLING */
+a {
+    color: #FF5349;
+}
+
+/* UNDERLINED ACCESS LINKS */
+.access {
+    text-decoration: underline;
+}
+
+/* MAIN REGISTRATION FORM CONTAINER */
+.register-container {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    /* SEMI-TRANSPARENT WHITE BACKGROUND */
+    background: #ffffff0d;
+    /* GREEN GLOW SHADOW EFFECT */
+    box-shadow: 0 0 50px #1db9544d;
+    width: 850px;
+}
+
+/* RIGHT SIDE WELCOME SECTION CONTAINER */
+#eastOfSignUp {
+    padding: 55px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+/* WELCOME SECTION LOGO STYLING */
+#eastOfSignUp img {
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+}
+
+/* WELCOME TEXT SECTION SPACING */
+#eastOfSignUpText {
+    margin-right: 60px;
+}
+
+/* WELCOME TEXT AND LIST FONT SIZE */
+#eastOfSignUpText p,
+#eastOfSignUpText li {
+    font-size: 15px;
+}
+
+/* NAME INPUT FIELDS CONTAINER - FLEXIBLE LAYOUT */
+.fillname-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* INDIVIDUAL NAME FIELD CONTAINERS */
+.fillname-container div {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+/* NAME INPUT FIELD WIDTH */
+.fillname-container input {
+    width: 80%;
+}
+
+/* CENTER ALIGNMENT FOR SPANS */
+span {
+    margin: 0 auto; 
+}
+
+/* DROPDOWN OPTION STYLING */
+option {
+    background-color: #000000e5;
+    color: white;
+}
+
+/* BACKGROUND LOGO - FIXED POSITION AND TRANSPARENT */
+#bigLogoPreview {
+    position: fixed;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0.15;
+}
+
+/* SMALL SCREEN WARNING MESSAGE - HIDDEN BY DEFAULT */
+#smallScreenWarning {
+    font-size: 25px;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #1DB954;
+    display: none;
+}
+
+/* RESPONSIVE DESIGN - FIXED POSITION FOR SMALL SCREENS */
+.register-fixed {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 50vh;
+    overflow-y: auto;
+}
